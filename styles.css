@@ -174,7 +174,9 @@
     object-fit: contain;
 }
 
-.footer-links img[src="images/footer-heart.jpg"] {
+.footer-links img[src="images/footer-heart.png"] {
+    margin: -40px;
     position: relative;
     top: -42px;
+    left: -4px;
 }
