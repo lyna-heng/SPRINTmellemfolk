@@ -149,105 +149,27 @@
     margin-top: 49px;
 }
 
-
+/* ------- Footer Section ------- */
 .support-section {
     display: flex;
+    flex-direction: column;
     margin-top: 33px;
 }
 
-.support-content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0;
-    width: fit-content;
-}
-
 .support-header {
-    align-self: flex-start;
     display: flex;
     color: #000;
-    text-align: center;
+    justify-content: center;
     font: 800 20px/1.4 Inter, sans-serif;
 }
 
-.support-image {
-    aspect-ratio: 1.34;
-    object-fit: contain;
-    object-position: center;
-    width: 145px;
-    border-radius: 4px;
-    max-width: 100%;
-}
-
-.support-label {
-    background-blend-mode: darken;
-    align-self: flex-start;
-    margin-top: 16px;
-    flex-basis: auto;
-}
-
-.support-icons {
+.footer-links {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    justify-content:space-between
 }
 
-.icon-wrapper-1 {
-    display: flex;
-    flex-direction: column;
-    border-radius: 4px;
-    position: relative;
-    aspect-ratio: 3.085;
-    align-items: flex-start;
-    gap: 18px;
-    flex: 1;
-    padding: 0 16px 18px;
-}
-
-.icon-1 {
-    aspect-ratio: 0.91;
+.footer-links img {
     object-fit: contain;
-    object-position: center;
-    width: 48px;
-    align-self: flex-end;
-    z-index: 10;
-    margin-top: -24px;
-}
-
-.icon-2 {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    width: 48px;
-    align-self: flex-start;
-    margin-top: -19px;
-}
-
-.icon-wrapper-2 {
-    display: flex;
-    flex-direction: column;
-    border-radius: 4px;
-    position: relative;
-    aspect-ratio: 3.085;
-    width: 145px;
-    align-items: flex-end;
-    padding: 0 29px 18px;
-}
-
-.icon-3 {
-    aspect-ratio: 1.19;
-    object-fit: contain;
-    object-position: center;
-    width: 43px;
-    z-index: 10;
-    margin-top: -7px;
-}
-
-.footer-image {
-    aspect-ratio: 0.65;
-    object-fit: contain;
-    object-position: center;
-    width: 100px;
-    border-radius: 4px;
-    max-width: 100%;
 }
