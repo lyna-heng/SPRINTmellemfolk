@@ -83,7 +83,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: absolute; /* Positioning relative to .menu-header */
+    position: absolute; /* Positioning to .menu-header */
     bottom: 180px;  /* Distance from the bottom of the .menu-header */
     width: 100%;
 }
@@ -100,7 +100,7 @@ html {
     padding: 0;    
     background: none; 
     cursor: pointer;
-    transform: translateX(-35px); /* Move the button 50px to the left */
+    transform: translateX(-35px); /* Move the button 35px to the left */
 }
 
 /* END of NEW buttons */
