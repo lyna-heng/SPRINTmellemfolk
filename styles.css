@@ -73,6 +73,39 @@
         object-position: center;
 }
 
+/* NEW buttons */
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+.buttons_arrangement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute; /* Positioning relative to .menu-header */
+    bottom: 180px;  /* Distance from the bottom of the .menu-header */
+    width: 100%;
+}
+
+.food_button {
+    border: none;  /* Remove button border */
+    padding: 0;    /* Remove button padding */
+    background: none; /* Remove button background */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+.drinks_button {
+    border: none;  
+    padding: 0;    
+    background: none; 
+    cursor: pointer;
+    transform: translateX(-35px); /* Move the button 50px to the left */
+}
+
+/* END of NEW buttons */
+
+
 .menu-picture {
     position: absolute;
     inset: 0;
@@ -182,7 +215,7 @@
 
 .red-body-text {
     margin: 0%;
-    color: red;
+    color: #B0191E;  
     font-style: italic;
 }
 
