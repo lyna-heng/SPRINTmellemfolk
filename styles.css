@@ -37,6 +37,7 @@
     text-decoration: none;
 }
 
+
 .shop-button {
     color: #000;
     white-space: nowrap;
@@ -171,6 +172,26 @@ html {
     padding: 10px 0;
 }
 
+/* Title under the "hand" */
+.under-hand-title {
+margin: -20%;
+text-align: top;
+text-align: center;
+color: #000;
+font-size: 12px;
+font-family: Inter;
+font-weight: 800;
+word-wrap: break-word;
+padding-top: 1px;
+padding-bottom: 1px;
+background-image:url("images/lime.jpg");
+background-size: 18%;
+background-repeat: no-repeat;
+background-position: 60% 50%;
+}
+
+/* END of Title under the "hand" */
+
 .category-label {
     color: #000;
     font-size: 40px;
@@ -178,10 +199,12 @@ html {
     font-weight: 800;
     line-height: 40px;
     word-wrap: break-word;
-    background-color: #c2ffe0;
-    margin-top: 49px;
+    margin-top: -20px;
+    background-image:url("images/lime.jpg");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
 }
-
 
 .support-section {
     display: flex;
@@ -215,7 +238,7 @@ html {
 
 .red-body-text {
     margin: 0%;
-    color: #B0191E;  
+    color:rgb(176,25,30);
     font-style: italic;
 }
 
