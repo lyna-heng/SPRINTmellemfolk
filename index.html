@@ -9,16 +9,16 @@
 </head>
 <body>
 
+    <img src="images/background-black-corner.png"alt="Decorative element" class="black-corner">
+
     <!--FRONT COVER SECTION-->
     <section class="menu-front-cover">
-        <div class="background-container">
-            <img src="images/Background-up-right-corner.png" alt="black-and-white-stripes">
-        </div>
         <header class="header-section">
             <nav class="nav-buttons">
                 <a href="https://www.ms.dk/en/mellemfolk" target="_blank" class="nav-button">ABOUT US</a>
                 <a href="https://www.ms.dk/shop" target="_blank" class="nav-button shop-button">SHOP</a>
             </nav>
+
             <h1 class="cafe-title">
                 <span class="cafe-title-large">Café</span>
                 <br>
@@ -52,36 +52,54 @@
         </div>
         
     </section>
+
+    <!--Fixed Buttons-->
+
+    <a href="#" class="button-language" id="language-btn">  <!--ADD PROPER LINK -->
+        <img src="images/button-language.png" alt="Language change button" />    
+    </a>
+
+    <a href="#nav-buttons" class="button-back-to-top">  <!--ADD PROPER LINK -->
+        <img src="images/button-back-to-top.png" alt="Back to top button" />    
+    </a>
+                  
+
+    <!-- Language Options Dropdown -->
+    <div id="language-options" class="language-options hidden">
+        <a href="index.html" class="language-option active">ENG</a>
+        <a href="danish.html" class="language-option">DA</a>
+    </div>
+
 <!--DRINKS SECTION-->
 
     <section>
 
-        <h2 class="category-label" id="drinks">drinks.</h2>   <!--NEW ID-->
-            
+        <h2 class="category-label" id="drinks">drinks.</h2>   
+
         <div class="header">
             <h3 class="menu-title">HOT DRINKS</h3>     
             <div class="menu"> 
                 
-                    <div class="image-wrapper">
-                      <img src="images/pic-hot-drinks.png" alt="Decorative coffee icon" class="menu-picture">
-                    </div>
-
-                    <ul class="menu-list">
-                        <li>Espresso (25)</li>
-                        <li>Cafe Latte (38)</li>
-                        <li>Chai Latte  (40)</li>
-                        <li>Turmeric Latte (40)</li>
-                        <li>Hot Chocolate (40)</li>
-                        <li>Tea (25)</li>
-                    </ul>
+                <div class="image-wrapper">
+                  <img src="images/pic-hot-drinks.png" alt="Decorative coffee icon" class="menu-picture">
                 </div>
+
+                <ul class="menu-list">
+                    <li>Espresso (25)</li>
+                    <li>Cafe Latte (38)</li>
+                    <li>Chai Latte  (40)</li>
+                    <li>Turmeric Latte (40)</li>
+                    <li>Hot Chocolate (40)</li>
+                    <li>Tea (25)</li>
+                </ul>
             </div>
+        </div>
        
             
-            <div class="header">
-                <h3 class="menu-title">COLD DRINKS</h3>
+        <div class="header">
+            <h3 class="menu-title">COLD DRINKS</h3>
 
-                <div class="menu">
+            <div class="menu">
                 <ul class="menu-list">
                     <li>Iced Latte (40)</li>
                     <li>Iced Matcha (40)</li>
@@ -90,20 +108,22 @@
                     <li>Maté Maté (35)</li>
                     <li>Kombucha (45)</li>
                 </ul>
+
                 <div class="image-wrapper">
                     <img src="images/pic-cold-drinks.png" alt="Decorative lemon icon" class="menu-picture">
                 </div>
             </div>
-            </div>
+        </div>
 
-            <div class="header">
-                <h3 class="menu-title">NATURAL WINE</h3>
+        <div class="header">
+            <h3 class="menu-title">NATURAL WINE</h3>
 
-                <div class="menu">
-                    <div class="image-wrapper">
-                         <img src="images/pic-glasses.png" alt="Decorative glasses image" class="menu-picture">
-                    </div>
-                    <ul class="menu-list">
+            <div class="menu">
+                <div class="image-wrapper">
+                    <img src="images/pic-glasses.png" alt="Decorative glasses image" class="menu-picture">
+                </div>
+
+                <ul class="menu-list">
                         <li>Red (50/240)</li>
                         <li>Orange (60/270)</li>
                         <li>White (50/240)</li>
@@ -113,13 +133,10 @@
             </div>
         
             <div class="header">        
-               
                 <h3 class="menu-title">BEER</h3>
 
                 <div class="menu">
-                    
-                
-                    <div class="header">
+                    <div class="header"> <!--Using the same class to vertically organise the titles and lists-->
                         <h4 class="menu-subtitle">BOTTLED</h4>
                         <ul class="menu-list">
                             <li>Hancock (25)</li>
@@ -136,8 +153,7 @@
                             <li>Thy Classic (40)</li>
                             <li>Thy Pilsner (40)</li>
                             <li>Fynsk Forår (50)</li>
-                            <li>Micro Brews -
-                                  
+                            <li>Micro Brews - 
                                 <p class="red-body-text">(ask at the bar for selection)</p>
                             </li>
                         </ul>
@@ -146,7 +162,6 @@
                     <div class="image-wrapper">
                         <img src="images/pic-bottle.png" alt="Decorative beer image" class="menu-picture">
                     </div>
-
                 </div>
             </div>
             
@@ -159,14 +174,14 @@
                         <img src="images/pic-cocktail.png" alt="Decorative cocktail image" class="menu-picture">
                     </div>
                 
-                <ul class="menu-list">
-                    <li>Light & Stormy (55)</li>
-                    <li>Gin and Tonic (55)</li>
-                    <li>Flower Power (55)</li>
-                    <li>Mate vodka (55)</li>
-                    <li>Rose Parks (55)</li>
-                    <li>Gin Hass (55)</li>
-                </ul>
+                    <ul class="menu-list">
+                        <li>Light & Stormy (55)</li>
+                        <li>Gin and Tonic (55)</li>
+                        <li>Flower Power (55)</li>
+                        <li>Mate vodka (55)</li>
+                        <li>Rose Parks (55)</li>
+                        <li>Gin Hass (55)</li>
+                    </ul>
                 </div>
             </div>
 
@@ -185,21 +200,20 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
        
         <!--FOOD SECTION-->
         <section> 
-            <h2 class="category-label" id="food">food.</h2>  <!--NEW ID-->
+            <h2 class="category-label" id="food">food.</h2> 
                 
             <div class="header">
                 <h3 class="menu-title">DAY MENU 10-17</h3>
                    
                 <div class="menu"> 
                         
-
-                    <div class="header"> <!--Ensuring all day food it stays in 1 column-->
-                    <ul class="menu-list">
+                    <div class="header"> <!--Using the same class to vertically organise the titles and lists-->
+                        <ul class="menu-list">
                             <li>Sourdough Buns:</li>
                             <li>with jam & butter (30)</li>
                             <li><em style="color: rgb(176,25,30);">add</em> vegan cheese (+10)</li>
@@ -207,36 +221,35 @@
                             <li>Panini:</li>
                             <li>Caramelised Onion (65)</li>
                             <li>Seasonal Salad (60)</li>
-                    </ul>
+                        </ul>
 
-                    <h4 class="menu-subtitle">SNACKS</h4>
-                    <ul class="menu-list">
+                        <h4 class="menu-subtitle">SNACKS</h4>
+                        <ul class="menu-list">
                             <li>Cinnamon Roll (30)</li>
                             <li>Cookie (17)</li>
                             <li>Hummus & Bread (45)</li>
                             <li>Nachos (60)</li>
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
 
                     <div class="image-wrapper">
                         <img src="images/pic-person.png" alt="Decorative food image" class="menu-picture">
                     </div>
 
-                    </div>
                 </div>
+            </div>
                 
             
-
             <div class="header">
-
                 <h3 class="menu-title">EVENING MENU 17-21</h3>
+
                 <div class="menu">
 
                     <div class="image-wrapper">
                       <img src="images/pic-spoon.png" alt="Decorative spoon icon" class="menu-picture">
-                     </div>
+                    </div>
 
-                     <div class="header">
+                    <div class="header">
                         <h4 class="menu-subtitle">MAINS</h4>
                         <ul class="menu-list">
                             <li>Cheeseburger with Polenta Fries (110)</li>
@@ -253,7 +266,7 @@
                             <li>Arabic Style Mezze (85)</li>
                             <li>Potato Fries (40)</li>
                         </ul>
-                     </div>
+                    </div>
 
                 </div>
             </div>
@@ -268,11 +281,16 @@
                 <div class="footer-links">
                     <a href="https://www.facebook.com/msactionaid"><img src="images/fcb-icon.png" class="social-media-icons" alt="facebook icon"></a>
                     <a href="https://www.instagram.com/mellemfolkeligtsamvirke/"> <img src="images/insta-icon.png" class="social-media-icons" alt="instagram icon"></a>
-                    <div class="heart-icon"><img src="images/footer-heart.png"  alt="heart icon"></div>
+                    <div class="heart-icon">
+                        <img src="images/footer-heart.png"  alt="heart icon">
+                    </div>
                     <a href="https://x.com/actionaiddk"><img src="images/twitter-icon.png" class="social-media-icons" alt="twitter icon"></a>
                     <a href="https://www.linkedin.com/company/actionaid-denmark"><img src="images/linkedin-icon.png" class="social-media-icons" alt="linkedin icon"></a>
                 </div>
         </section>
+
+    <!-- Link to  JavaScript file -->
+    <script src="script.js"></script>
 
 </body>
 </html>

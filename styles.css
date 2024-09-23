@@ -1,5 +1,28 @@
+html, body {
+    height: 100%; /* Ensure the body takes up full height */
+    margin: 0;    /* Remove default margin */
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+body {
+    background-image: url('images/background-red.png');
+    background-size:auto; 
+    background-position: top, right; /* place the image */
+    background-repeat:repeat-y; 
+    position: absolute;
+    height: 100%;
+    margin: 0;
+}
+
+.black-corner {
+    position: absolute;
+    z-index: -1;
+    right: 0pt;
+    border-bottom-left-radius: 4pt;
+
+}
+
 .menu-front-cover {
-    background-color: #fff;
     display: flex;
     max-width: 480px;
     width: 100%;
@@ -54,7 +77,7 @@
     font-size: 55px;
 }
 
-.background-container {
+/*.background-container {
     height: 20vh;
     background-image: url(Background-up-right-corner.png);
     background-position: right 40px top;
@@ -63,7 +86,7 @@
     display: flex;
     justify-content: right;
     align-items: right;
-}
+} */
 
 .menu-header {
     display: flex;
@@ -75,7 +98,6 @@
     padding: 20px 0px 0 0;
 }
 
-
 .menu-hand-pic {
         position: absolute;
         left: -30px; /* Move 30px to the left for better positionn */
@@ -85,11 +107,7 @@
         object-position: center;
 }
 
-/* NEW buttons */
-
-html {
-    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
-}
+/* Round buttons */
 
 .buttons_arrangement {
     display: flex;
@@ -115,8 +133,95 @@ html {
     transform: translateX(-35px); /* Move the button 35px to the left */
 }
 
-/* END of NEW buttons */
+/* NEW fixed buttons */
 
+.button-back-to-top {
+    position: fixed;  
+    bottom: 50px;   
+    right: 20px;     
+    z-index: 1000; 
+}
+
+.button-back-to-top img {
+    width: auto;     
+    height: 48px;    
+}
+/* End of fixed buttons */
+
+/* Language button styling */
+.button-language {
+    position: fixed;
+    bottom: 3px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.button-language img {
+    width: 50px;
+    height: auto;
+}
+
+/* Language options dropdown (hidden initially) */
+.language-options {
+    position: fixed;
+    bottom: 20px; /* Initially at the bottom (hidden) */
+    left: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    opacity: 0; /* Hidden initially */
+    transform: translateY(20px); /* Initially below the button */
+    transition: all 0.3s ease-in-out; /* Transition for smooth animation */
+    pointer-events: none; /* Disable interaction when hidden */
+}
+
+/* Language option links */
+.language-option, .language-option:focus {
+    padding: 5px 10px;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Highlight active language */
+.language-option.active {
+    font-weight: bold;
+    background-color: #c2ffe0;
+    border-radius: 3px;
+    outline: none;
+}
+
+/* When visible (toggled by JavaScript) */
+.language-options.show {
+    opacity: 1;
+    transform: translateY(0); /* Slide up to its original position */
+    pointer-events: auto; /* Enable interaction */
+}
+
+/* Add sliding down effect (hides the options) */
+.language-options.hide {
+    opacity: 0;
+    transform: translateY(20px); /* Slide down */
+    pointer-events: none;
+}
+
+.category-label {
+    color: #000;
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 800;
+    line-height: 40px;
+    word-wrap: break-word;
+    margin-top: -20px;
+    background-image:url("images/lime.jpg");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+}
 
 .menu-picture {
     position: absolute;
@@ -203,19 +308,6 @@ background-position: 60% 50%;
 
 /* END of Title under the "hand" */
 
-.category-label {
-    color: #000;
-    font-size: 40px;
-    font-family: Inter;
-    font-weight: 800;
-    line-height: 40px;
-    word-wrap: break-word;
-    margin-top: -20px;
-    background-image:url("images/lime.jpg");
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: 1% 50%;
-}
 
 /* ------- Footer Section ------- */
 
