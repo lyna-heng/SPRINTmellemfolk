@@ -1,28 +1,5 @@
-html, body {
-    height: 100%; /* Ensure the body takes up full height */
-    margin: 0;    /* Remove default margin */
-    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
-}
-
-body {
-    background-image: url('images/background-red.png');
-    background-size:auto; 
-    background-position: top, right; /* place the image */
-    background-repeat:repeat-y; 
-    position: absolute;
-    height: 100%;
-    margin: 0;
-
-
-.black-corner {
-    position: absolute;
-    z-index: -1;
-    right: 0pt;
-    border-bottom-left-radius: 4pt;
-
-}
-
 .menu-front-cover {
+    background-color: #fff;
     display: flex;
     max-width: 480px;
     width: 100%;
@@ -52,13 +29,14 @@ body {
     align-self: stretch;
     background-color: #c2ffe0;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24);
-    min-height: 10px;
+    min-height: 28px;
     gap: 8px;
     overflow: hidden;
     color: #050000;
     padding: 6px 2px;
     text-decoration: none;
 }
+
 
 .shop-button {
     color: #000;
@@ -76,6 +54,17 @@ body {
     font-size: 55px;
 }
 
+.background-container {
+    height: 20vh;
+    background-image: url(Background-up-right-corner.png);
+    background-position: right 40px top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
 .menu-header {
     display: flex;
     flex-direction: column;
@@ -86,8 +75,8 @@ body {
     padding: 20px 0px 0 0;
 }
 
+
 .menu-hand-pic {
-        background: none;
         position: absolute;
         left: -30px; /* Move 30px to the left for better positionn */
         height: 100%;
@@ -96,39 +85,7 @@ body {
         object-position: center;
 }
 
-.menu-picture {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.menu-label {
-    position: relative;
-    background-color: #c2ffe0;
-    color: #000;
-    margin-left: 25px;
-    letter-spacing: 14.56px;
-    padding: 2px 1px;
-    font: 400 13px Sanchez;
-    display: inline-block; /* This ensures the background only fits the text */
-}
-
-.category-label {
-    position: relative;
-    background-color: #c2ffe0;
-    color: #000;
-    font-size: 40px;
-    font-family: Inter;
-    font-weight: 800;
-    line-height: 40px;    
-    margin-top: 0px;
-    display: inline-block; /* This ensures the background only fits the text */
-}
-
-/* Round buttons */
+/* NEW buttons */
 
 html {
     scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
@@ -158,85 +115,27 @@ html {
     transform: translateX(-35px); /* Move the button 35px to the left */
 }
 
-/* END of round buttons */
+/* END of NEW buttons */
 
-/* NEW fixed buttons */
 
-.button-back-to-top {
-    position: fixed;  
-    bottom: 50px;   
-    right: 20px;     
-    z-index: 1000; 
+.menu-picture {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.button-back-to-top img {
-    width: auto;     
-    height: 48px;    
-}
-/* End of fixed buttons */
-
-/* Language button styling */
-.button-language {
-    position: fixed;
-    bottom: 3px;
-    left: 20px;
-    z-index: 1000;
-}
-
-.button-language img {
-    width: 50px;
-    height: auto;
-}
-
-/* Language options dropdown (hidden initially) */
-.language-options {
-    position: fixed;
-    bottom: 20px; /* Initially at the bottom (hidden) */
-    left: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    opacity: 0; /* Hidden initially */
-    transform: translateY(20px); /* Initially below the button */
-    transition: all 0.3s ease-in-out; /* Transition for smooth animation */
-    pointer-events: none; /* Disable interaction when hidden */
-}
-
-/* Language option links */
-.language-option, .language-option:focus {
-    padding: 5px 10px;
-    color: #000;
-    text-decoration: none;
-    outline: none;
-}
-
-/* Highlight active language */
-.language-option.active {
-    font-weight: bold;
+.menu-label {
+    position: relative;
     background-color: #c2ffe0;
-    border-radius: 3px;
-    outline: none;
+    margin-left: 25px;
+    color: #000;
+    letter-spacing: 14.56px;
+    padding: 2px 1px;
+    font: 400 13px Sanchez;
 }
-
-/* When visible (toggled by JavaScript) */
-.language-options.show {
-    opacity: 1;
-    transform: translateY(0); /* Slide up to its original position */
-    pointer-events: auto; /* Enable interaction */
-}
-
-/* Add sliding down effect (hides the options) */
-.language-options.hide {
-    opacity: 0;
-    transform: translateY(20px); /* Slide down */
-    pointer-events: none;
-}
-
-
 
 .menu-list {
     color: black;
@@ -247,13 +146,6 @@ html {
     letter-spacing: 1.65px;
     list-style-type: none;
 }
-
-.red-body-text {
-    margin: 0%;
-    color: #B0191E;  
-    font-style: italic;
-}
-
 
 .menu {
     display: flex; /* Display image and list side by side */
@@ -291,35 +183,79 @@ html {
     padding: 10px 0;
 }
 
+/* Title under the "hand" */
+.under-hand-title {
+margin: -20%;
+text-align: top;
+text-align: center;
+color: #000;
+font-size: 12px;
+font-family: Inter;
+font-weight: 800;
+word-wrap: break-word;
+padding-top: 1px;
+padding-bottom: 1px;
+background-image:url("images/lime.jpg");
+background-size: 18%;
+background-repeat: no-repeat;
+background-position: 60% 50%;
+}
+
+/* END of Title under the "hand" */
+
+.category-label {
+    color: #000;
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 800;
+    line-height: 40px;
+    word-wrap: break-word;
+    margin-top: -20px;
+    background-image:url("images/lime.jpg");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+}
+
+/* ------- Footer Section ------- */
 
 .support-section {
     display: flex;
-}
-
-.support-content {
-    display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0;
-    width: fit-content;
+    align-items: center;
+    margin-top: 33px;
 }
 
 .support-header {
-    align-self: center;
-    display: flex;
     color: #000;
     font: 800 20px/1.4 Inter, sans-serif;
+    padding: 10px 10px 25px;
+}
+
+.red-body-text {
+    margin: 0%;
+    color:rgb(176,25,30);
+    font-style: italic;
 }
 
 .support-label {
-    background-blend-mode: darken;
-    align-self: center;
-    flex-basis: auto;
+    background-color: #c2ffe0;
 }
 
 .footer-links {
-    align-self: center;
-     flex-basis: auto;
-     margin-top: -70px
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 45px 10px 0;
+    gap: 10px;
+}
 
+.social-media-icons {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.heart-icon {
+    margin: -100px -30px 0 -30px;
 }
