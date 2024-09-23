@@ -9,16 +9,17 @@
 </head>
 <body>
 
+    <img src="images/background-black-corner.png"alt="Decorative element" class="black-corner">
+
     <!--FRONT COVER SECTION-->
     <section class="menu-front-cover">
-        <div class="background-container">
-            <img src="images/Background-up-right-corner.png" alt="black-and-white-stripes">
-        </div>
         <header class="header-section">
-            <nav class="nav-buttons">
+            <nav class="nav-buttons" id="nav-buttons">
                 <a href="https://www.ms.dk/en/mellemfolk" target="_blank" class="nav-button">ABOUT US</a>
                 <a href="https://www.ms.dk/shop" target="_blank" class="nav-button shop-button">SHOP</a>
             </nav>
+            
+           
             <h1 class="cafe-title">
                 <span class="cafe-title-large">Café</span>
                 <br>
@@ -27,7 +28,7 @@
         </header>
         
         <div class="menu-header">
-            <h2 class="menu-label">MENU</h2>
+            <h2 class="menu-label">M E N U</h2>
             <img style="width: 100%; height: 100%" src="images/pic-main-hand.png" alt="Menu background">
         
             <!--Buttons-->
@@ -46,13 +47,27 @@
             </div>
             <!--END Buttons-->
         </div>
-        
-        <div>
-         <h1 class="under-hand-title">ALL FOOD IS PLANT BASED</h1>
-        </div>
-        
-    </section>
-<!--DRINKS SECTION-->
+    <section>   
+    
+     <!--Fixed Buttons-->
+
+    <a href="#" class="button-language" id="language-btn">  <!--ADD PROPER LINK -->
+        <img src="images/button-language.png" alt="Language change button" />    
+    </a>
+
+    <a href="#nav-buttons" class="button-back-to-top">  <!--ADD PROPER LINK -->
+        <img src="images/button-back-to-top.png" alt="Back to top button" />    
+    </a>
+           
+    <!-- End of fixed Buttons-->        
+
+<!-- Language Options Dropdown -->
+<div id="language-options" class="language-options hidden">
+    <a href="index.html" class="language-option active">ENG</a>
+    <a href="danish.html" class="language-option">DA</a>
+</div>
+
+    <!--DRINKS SECTION-->
 
     <section>
 
@@ -197,13 +212,12 @@
                    
                 <div class="menu"> 
                         
-
                     <div class="header"> <!--Ensuring all day food it stays in 1 column-->
                     <ul class="menu-list">
                             <li>Sourdough Buns:</li>
                             <li>with jam & butter (30)</li>
-                            <li><em style="color: rgb(176,25,30);">add</em> vegan cheese (+10)</li>
-                            <li><em style="color: rgb(176,25,30);">add</em> coffee of choice (+25)</li>
+                            <li><p class="red-body-text">add</p> vegan cheese (+10)</li>
+                            <li> coffee of choice (+25)</li>
                             <li>Panini:</li>
                             <li>Caramelised Onion (65)</li>
                             <li>Seasonal Salad (60)</li>
@@ -262,17 +276,25 @@
 
     <!---FOOTER SECTION-->
         <section class="support-section">
+            <div class="support-content">
                 <div class="support-header">
                     <h2 class="support-label">SUPPORT US</h2>
                 </div>
                 <div class="footer-links">
-                    <a href="https://www.facebook.com/msactionaid"><img src="images/fcb-icon.png" class="social-media-icons" alt="facebook icon"></a>
-                    <a href="https://www.instagram.com/mellemfolkeligtsamvirke/"> <img src="images/insta-icon.png" class="social-media-icons" alt="instagram icon"></a>
-                    <div class="heart-icon"><img src="images/footer-heart.png"  alt="heart icon"></div>
-                    <a href="https://x.com/actionaiddk"><img src="images/twitter-icon.png" class="social-media-icons" alt="twitter icon"></a>
-                    <a href="https://www.linkedin.com/company/actionaid-denmark"><img src="images/linkedin-icon.png" class="social-media-icons" alt="linkedin icon"></a>
+                    <img src="images/fcb-icon.jpg" alt="facebook icon">
+                    <img src="images/insta-icon.png" alt="instagram icon">
+                    <img src="images/footer-heart.png" alt="heart icon">
+                    <img src="images/twitter-icon.png" alt="twitter icon">
+                    <img src="images/linkedin-icon.png" alt="linkedin icon">
                 </div>
+                
+            </div>
         </section>
+
+
+        <!-- Link to  JavaScript file -->
+<script src="script.js"></script>
+   
 
 </body>
 </html>
