@@ -9,11 +9,12 @@ html, body {
 body {
     background-image: url('images/background-red.png');
     background-size:auto; 
-    background-position: top, right; /* place the image */
+    background-position: top right; /* place the image */
     background-repeat:repeat-y; 
     position: absolute;
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .black-corner {
@@ -107,7 +108,7 @@ body {
         width: 100%;
         object-fit: cover;
         object-position: center;
-        padding: 0, 0, 0, 0;
+        padding: 0 0 0 0;
 }
 
 /* Round buttons */
@@ -117,7 +118,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     position: absolute; /* Positioning to .menu-header */
-    bottom: 180px;  /* Distance from the bottom of the .menu-header */
+    bottom: 30%;  /* Distance from the bottom of the .menu-header */
     width: 100%;
 }
 
