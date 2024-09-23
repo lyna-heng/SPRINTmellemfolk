@@ -37,6 +37,7 @@
     text-decoration: none;
 }
 
+
 .shop-button {
     color: #000;
     white-space: nowrap;
@@ -83,6 +84,39 @@
         object-fit: cover;
         object-position: center;
 }
+
+/* NEW buttons */
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+.buttons_arrangement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute; /* Positioning to .menu-header */
+    bottom: 180px;  /* Distance from the bottom of the .menu-header */
+    width: 100%;
+}
+
+.food_button {
+    border: none;  /* Remove button border */
+    padding: 0;    /* Remove button padding */
+    background: none; /* Remove button background */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+.drinks_button {
+    border: none;  
+    padding: 0;    
+    background: none; 
+    cursor: pointer;
+    transform: translateX(-35px); /* Move the button 35px to the left */
+}
+
+/* END of NEW buttons */
+
 
 .menu-picture {
     position: absolute;
@@ -149,6 +183,26 @@
     padding: 10px 0;
 }
 
+/* Title under the "hand" */
+.under-hand-title {
+margin: -20%;
+text-align: top;
+text-align: center;
+color: #000;
+font-size: 12px;
+font-family: Inter;
+font-weight: 800;
+word-wrap: break-word;
+padding-top: 1px;
+padding-bottom: 1px;
+background-image:url("images/lime.jpg");
+background-size: 18%;
+background-repeat: no-repeat;
+background-position: 60% 50%;
+}
+
+/* END of Title under the "hand" */
+
 .category-label {
     color: #000;
     font-size: 40px;
@@ -156,109 +210,52 @@
     font-weight: 800;
     line-height: 40px;
     word-wrap: break-word;
-    background-color: #c2ffe0;
-    margin-top: 49px;
+    margin-top: -20px;
+    background-image:url("images/lime.jpg");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
 }
 
+/* ------- Footer Section ------- */
 
 .support-section {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 33px;
 }
 
-.support-content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0;
-    width: fit-content;
-}
-
 .support-header {
-    align-self: flex-start;
-    display: flex;
     color: #000;
-    text-align: center;
     font: 800 20px/1.4 Inter, sans-serif;
+    padding: 10px 10px 25px;
 }
 
-.support-image {
-    aspect-ratio: 1.34;
-    object-fit: contain;
-    object-position: center;
-    width: 145px;
-    border-radius: 4px;
-    max-width: 100%;
+.red-body-text {
+    margin: 0%;
+    color:rgb(176,25,30);
+    font-style: italic;
 }
 
 .support-label {
-    background-blend-mode: darken;
-    align-self: flex-start;
-    margin-top: 16px;
-    flex-basis: auto;
+    background-color: #c2ffe0;
 }
 
-.support-icons {
+.footer-links {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 45px 10px 0;
+    gap: 10px;
 }
 
-.icon-wrapper-1 {
-    display: flex;
-    flex-direction: column;
-    border-radius: 4px;
-    position: relative;
-    aspect-ratio: 3.085;
-    align-items: flex-start;
-    gap: 18px;
-    flex: 1;
-    padding: 0 16px 18px;
-}
-
-.icon-1 {
-    aspect-ratio: 0.91;
+.social-media-icons {
+    width: 44px;
+    height: 44px;
     object-fit: contain;
-    object-position: center;
-    width: 48px;
-    align-self: flex-end;
-    z-index: 10;
-    margin-top: -24px;
 }
 
-.icon-2 {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    width: 48px;
-    align-self: flex-start;
-    margin-top: -19px;
-}
-
-.icon-wrapper-2 {
-    display: flex;
-    flex-direction: column;
-    border-radius: 4px;
-    position: relative;
-    aspect-ratio: 3.085;
-    width: 145px;
-    align-items: flex-end;
-    padding: 0 29px 18px;
-}
-
-.icon-3 {
-    aspect-ratio: 1.19;
-    object-fit: contain;
-    object-position: center;
-    width: 43px;
-    z-index: 10;
-    margin-top: -7px;
-}
-
-.footer-image {
-    aspect-ratio: 0.65;
-    object-fit: contain;
-    object-position: center;
-    width: 100px;
-    border-radius: 4px;
-    max-width: 100%;
+.heart-icon {
+    margin: -100px -30px 0 -30px;
 }
